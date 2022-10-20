@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Portfolio</title>
+    <style>
+      html {
+      margin: 0;
+      padding: 0;
+}
+header{
+       width: 100vw;
+       height: 80px;
+       position: scroll;
+       top: 0;
+       background-color: white;
+       border-bottom: 1px solid red;
+       z-index: 1;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav-link{
+         text-transform: uppercase;
+         color: orange;
+         font: 20px sans-serif;
+         padding: 100% 25px;
+}
+
+nav-link-hover{
+    background-color: red;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+}
+h1 {
+    font-size: 15pt;
+
+color: orange;
+
+text-align: center; margin: 0 0 10px 0;
+
+padding: 18px 0 18px 0;
+}
+
+ h1 span {
+
+border: 1px solid green;
+padding: 10px;
+
+}
+
+p {
+
+padding: 0;
+
+margin: 0;
+}
+
+img-circle {
+
+border: 3px solid black;
+
+border-radius: 50%;
+
+}
+.main{
+  border: 15px solid green;
+
+}
+.section {
+
+background-color: #fff;
+
+padding: 15px;
+
+margin-bottom: 10px;
+
+border-radius: 10px;
+}
+#header {
+
+    background-image: url("https://uploads-ssl.webflow.com/5e4dfa5d58d02b574c094981/5e61b93645 2770f1cc437223_Render% 20Engine%20Blur.jpg");
+    
+    background-size: cover;
+    
+    }
+    
+    #header img{
+    
+    display: block;
+    
+    width: 80px;
+    
+    height: 80px;
+    
+    margin: auto;
+    
+}
+    
+    #header p {
+    
+    font-size: 25pt; 
+    color:green; 
+    padding-top: 5px; 
+    margin: 0; 
+    font-weight: bold; 
+    text-align: center;
+    
+}
+.selected {
+
+background-color: #136f48; 
+color:black;
+font-weight: bold;    
+}
+    
+.gallery{
+
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem-1rem;
+    
+}
+gallery-item {
+
+/*Minimum width of 24rem and grow to fit available space */    
+flex: 1024rem;    
+ /* Margin value should be half of grid-gap value as margins on flex items don't collapse */    
+margin: 1rem;   
+box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); 
+overflow: hidden;
+    
+}
+    
+    gallery-image {
+    
+width: 100%;
+display: block; 
+height: 100%; 
+transition: transform 400ms ease-out;
+object-fit: cover;
+}
+gallery-image:hover {
+     transform:scale(1.15);
+
+} li{
+
+margin-bottom: 15px;
+font-weight: bold;
+}
+progress {
+
+width: 70%;
+height: 20px;
+color: orange;
+background: #000;
+}
+
+hr {
+
+border: 0;
+height: 1px;
+background: #f36f48;
+
+}
+form {
+
+text-align: center;
+margin-top: 0;
+}
+ .sumbit{   
+    background-color:green;
+    padding: 12px 45px;
+    cursor: pointer;
+    border-radius: 5px; 
+    color: #ffffff; 
+    outline: none;
+    border: none;
+    margin: 0; 
+    font-weight: bold;
+ }    
+.submit:hover {
+    
+background-color: black;
+}    
+    textarea {
+    
+    height: 100px;
+    
+}    
+input, textarea {    
+margin-bottom: 10px; 
+font-size: 11pt;
+padding: 15px 10px 10px; 
+border: 1px solid #cecece; 
+background-color: #efefef;
+color: #787575;
+border-radius: 5px; 
+width: 70%;
+outline: none;
+
+}
+
+.face {
+
+transform:scale(0.4);
+margin: 0 auto;
+display: block;
+margin-top: -35px;
+margin-bottom: -25px;
+}
+
+#contacts img {
+
+height: 50px; 
+width: 50px;
+margin-left: 7px;
+margin-right: 7px;
+}
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contacts a {
+    text-decoration: none;
+}
+     #contacts img:hover{ 
+        opacity: 0.8;
+}
+      #contacts {
+    
+    text-align: center;
+}
+    .info{
+      border: 2px solid green;
+      color:green;
+      width: 150px;
+      margin: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: black;
+    }
+    .Copyright {
+    
+font-size: 18px;
+text-align: center;
+ padding-bottom: 10px;
+color: black;
+}
+.list-section{
+  width: 60%;
+  margin: auto;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <a href="#" class="nav-link">About Me</a>
+        <a href="#Contact" class="nav-link">Contact</a>
+        <a href="#Skills" class="nav-link">My Skills</a>
+        
+      </nav>
+    </header>
+    <!--header image start-->
+  <div id="header" class="section">
+    <img alt="Safwan'sPortfolio.jpg " class="img-circle"
+    src="https://wallpapercave.com/wp/wp5056707.jpg"
+    <p>SAFWAN KHAN</p>
+  </div>
+  <div class="section">
+    <h1 id="#"><span>About Me</span></h1>
+    <p>
+    Hey! Its me <b>Safwan</b>. I am currently studying in <b>Grade 9</b> at <b>Span International Academy</b>.
+     I am 14 year old.I like <em>Poetry</em>.these are the only thing i am good at.
+    </p>
+  </div>
+  <!--About Me Section-->
+  <div>
+  <div class="section main" >
+    <div class="head">
+      <button class="info">My Projects
+
+      </button>
+    </div>
+    
+   <!--My skills Start -->
+   <div class="section">
+    <div class="head">
+      <button class="info">My Skills
+
+      </button>
+    </div>
+    <div class="list-section">
+    <ul class="list
+    " >
+
+      <li>HTML<br />
+        <progress min="0" max="100" value="80"></progress>
+     </li>
+     <li>Css <br />
+      <progress min="0" max="100" value="70"></progress>
+     </li>
+     <li>C++ <br />
+      <progress min="0" max="100" value="70"></progress>
+     </li>
+     <li>C<br />
+      <progress min="0" max="100" value="70"></progress>
+     </li>
+    </ul>
+  </div>
+   </div>
+
+   <!--My Skills Section End-->
+   <!--Form Section Start-->
+   <div class="section">
+    <div class="head">
+      <button class="info">Contact Me
+
+      </button>
+    </div>
+   
+   <div class="copyright">
+    &copy; 2022 A sincere web developer.All rights reserved.
+   </div>
+  </body> 
+</html>
